@@ -1,0 +1,265 @@
+body{
+		background-image: url("img/sakura.png");
+}
+
+.container {
+	background-color: white;
+}
+
+.header {
+	height: 600px;
+	background: url('img/untitled.jpg') no-repeat;
+	background-size: cover;
+}
+.header a {
+	font-size: 24pt;
+	color: #fff;
+	margin-top: 50px;
+	margin-left: 50px;
+	display: block;
+	text-transform: uppercase;
+}
+.header p {
+	font-size: 42pt;
+	text-align: center;
+	color: #fff;
+	margin-top: 150px;
+	text-transform: lowercase;
+}
+
+@media screen and (max-width: 760px) {
+	.header {
+		height: 300px;
+	}
+	.header p {
+		display: none;
+	}
+	.header a {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		margin: 0;
+	}
+}
+
+.main-menu {
+	width: 100%;
+	background-color: #bdc1be;
+}
+.main-menu li {
+	display: inline-block;
+	height: 100px;
+	transition: 3s;
+	margin-left: 80px;
+}
+.main-menu li a {
+	color: #000;
+	font-size: 18pt;
+	padding-left: 40px;
+	padding-right: 40px;
+	line-height: 100px;
+	display: block;
+}
+.main-menu li:hover {
+	background-color: #DF9900;
+}
+.main-menu li:hover a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.hamburger {
+	display: none;
+	height: 100px;
+	background-color: #F1C40F;
+	text-align: right;
+	padding-right: 50px;
+}
+
+.hamburger .glyphicon {
+	font-size: 24pt;
+	padding-top: 30px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+	.main-menu {
+		padding: 0;
+		display: none;
+	}
+	.main-menu li {
+		display: block;
+		text-align: center;
+		margin-left: 0px;
+	}
+	.hamburger {
+		display: block;
+	}
+	
+}
+
+@media.screen and (min-width: 761px) {
+	.main-menu {
+		display: block!important;
+	}
+}
+
+.gallery img {
+	width: 100%;	
+}
+.gallery div {
+	padding: 0;
+}
+
+.image-container:hover .overlay {
+	opacity: 0.7;
+}
+
+.image-container:hover img {
+	filter: blur(3px);
+}
+
+.gallery img:hover{
+	filter: blur(5px);
+}
+
+.contact-form {	
+	background-color: #bdc1be;
+	padding: 100px;
+}
+.contact-form h1 {
+	font-size: 24pt;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+
+.form-control {
+	height: 45px;
+	border-radius: 0;
+	border: 1px solid #000;
+}
+.form-control::placeholder {
+	color: #000;
+}
+.btn, .btn:hover {
+	padding: 15px 25px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 0;
+}
+.btn-default {
+	border: 0;
+}
+
+.footer {
+	height: 400px;
+	background: url('img/untitled2.jpg') no-repeat;
+	background-size: cover;
+}
+.footer img {
+	margin: 100px 0 0 100px;
+}	
+.footer ul {
+	margin-top: 100px;
+	float: right;
+}
+.footer ul li {
+	display: inline-block;
+}
+.footer ul li a {
+	color: #fff;
+	font-size: 18pt;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: block;
+}
+
+.carousel {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.video-block {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.video-block div {
+	padding: 0;
+}
+
+.square-blocks div{
+	height: 250px;
+	
+}
+
+.square-blocks .light-gray-bg {
+	background-color: #F0F0F0;
+}
+
+.square-blocks .dark-gray-bg {
+	background-color: #E0E0E0;
+}
+
+.square-blocks p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 18pt;
+	text-transform: uppercase;
+}
+
+.section {
+	margin: 100px 0;
+}
+
+.section h1 {
+	font-size: 24pt;
+	text-align: center;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+
+.square-blocks span {
+	font-size: 52pt;
+	color: orange;
+}
+
+.about-me-image {
+	padding-left: 0;
+}
+
+.about-me-text h1{
+	text-align: left;
+}
+
+.about-me-text p {
+	font-size: 15pt;
+	margin-bottom: 20px
+}
+
+h1 {
+	text-align: center;
+}
+
+.photo_txt {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 30pt;
+	color: white;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 10px black;
+	text-align: center;
+}
+
+.txt_s{
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	font-size: 20pt;
+}
